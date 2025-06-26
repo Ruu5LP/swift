@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  swift:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: bash
+    tty: true
